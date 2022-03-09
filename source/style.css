@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Poppins', san-serif;
+    font-family: 'Poppins', san-serif !important;
     background-color: #d5d7de !important;
 }
 
@@ -17,6 +17,9 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 header {
@@ -30,16 +33,19 @@ header {
     background: rgb(22, 147, 233);
     background: linear-gradient(90deg, rgba(22, 147, 233, 1) 0%, rgba(22, 135, 230, 1) 50%, rgba(0, 176, 255, 1) 100%);
     color: #fff;
-    font-size: 15px;
     padding: 0.5rem;
     border-radius: 3px;
     text-align: center;
 }
 
+header h6 {
+    font-size: 14px;
+}
+
 header div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -59,6 +65,10 @@ header div {
     border-right: 1px solid #fff;
     border-right-width: 0.2em;
     padding-right: 0.5rem;
+}
+
+.profile img {
+    border-radius: 50%;
 }
 
 .search-section {
@@ -82,6 +92,7 @@ header div {
     background-color: #fff;
     padding: 0.2rem;
     font-size: 0.8rem;
+    border-radius: 0.2rem;
 }
 
 .categories {
@@ -92,10 +103,139 @@ header div {
     justify-content: flex-start;
     align-items: center;
     color: #297ae6;
+    background-color: rgb(243, 243, 243) !important;
+    /* overflow-x: visible; */
 }
 
 .categories div {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
     border-radius: 5px;
     border: 1px solid #297ae6;
+    align-items: center;
     justify-content: space-between;
+    background-color: #fff;
+}
+
+.location input {
+    width: 100%;
+    border: none;
+    border-radius: 0.1rem;
+    border-bottom: 2px solid #d5d7dea2;
+    outline: none;
+    color: #59595a;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+.location input::placeholder {
+    color: #b0b0b1;
+    padding-left: 3px;
+}
+
+#search-button div:first-child {
+    flex: 3;
+}
+
+#search-button div:last-child {
+    background: rgb(22, 147, 233);
+    background: linear-gradient(90deg, rgba(22, 147, 233, 1) 0%, rgba(22, 135, 230, 1) 50%, rgba(0, 176, 255, 1) 100%);
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main-job-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(243, 243, 243);
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+aside {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px !important;
+    color: #747475;
+    border-radius: 3px;
+    background: rgb(218, 237, 250);
+}
+
+.alert-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.alert-section h6 {
+    color: #404041;
+}
+
+.alert-section input {
+    width: 90%;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 0.1rem;
+    border: #d5d7dea2;
+    outline: none;
+    color: #414142;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+
+.alert-section input::placeholder {
+    color: #b0b0b1;
+    padding-left: 3px;
+}
+
+.alert-section button {
+    padding-left: 0 !important;
+    margin-left: 0px !important;
+}
+
+.button {
+    background: rgb(10, 82, 238);
+    color: #fff;
+    width: 70%;
+    border-radius: 3px;
+    border: rgb(10, 82, 238);
+    outline: none;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+
+}
+
+main {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.job-list-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #6f6f70;
 }

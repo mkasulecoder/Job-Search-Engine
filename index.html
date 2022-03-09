@@ -26,9 +26,15 @@
                 <img src="./images/job-icon.png" alt="logo" width="30" height="auto">
             </div>
             <div class="header-child">
-                <div>Find Jobs</div>
-                <div>Review Companies</div>
-                <div>Compare Salaries</div>
+                <div>
+                    <h6>Find Jobs</h6>
+                </div>
+                <div>
+                    <h6>Review Companies</h6>
+                </div>
+                <div>
+                    <h6>Compare Salaries</h6>
+                </div>
             </div>
             <div class="header-child">
                 <div>
@@ -53,14 +59,11 @@
                             </svg>
                         </div>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                                fill="#fff">
-                                <path d="M0 0h24v24H0V0z" fill="none" />
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
-                            </svg>
+                            <img src="./images/MarkKasule.jpeg" alt="profile image" width="30" height="30">
                         </div>
-                        <div>John Doe</div>
+                        <div>
+                            <h6>Mark Kasule</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +78,7 @@
 
             <div class="categories">
                 <div>
-                    Software Developer
+                    Developer
                     <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="24px"
                         fill="#297ae6">
                         <path d="M0 0h24v24H0V0z" fill="none" />
@@ -93,22 +96,71 @@
                     </svg>
                 </div>
             </div>
-            <div>
+            <div class="location">
                 <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="19px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M18.75 3.94L4.07 10.08c-.83.35-.81 1.53.02 1.85L9.43 14c.26.1.47.31.57.57l2.06 5.33c.32.84 1.51.86 1.86.03l6.15-14.67c.33-.83-.5-1.66-1.32-1.32z" />
+                    </svg>
                     <input type="search" placeholder="Silver Spring, M.D" autocomplete />
                 </div>
             </div>
-            <div>
+            <div class="location">
                 <div>
-                    <input type="search" placeholder="Search..." autocomplete />
+                    <svg xmlns="http://www.w3.org/2000/svg" height="19px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+                    </svg>
+                    <input type="search" placeholder="Job Type" autocomplete />
                 </div>
             </div>
-            <div>
+            <div class="location" id="search-button">
                 <div>
-                    <input type="search" placeholder="Search..." autocomplete />
+                    <svg xmlns="http://www.w3.org/2000/svg" height="19px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M10 16V8c0-1.1.89-2 2-2h9V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-1h-9c-1.11 0-2-.9-2-2zm3-8c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h9V8h-9zm3 5.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                    </svg>
+                    <input type="search" placeholder="Salaries Expectation" autocomplete />
+                </div>
+                <div>
+                    Search
                 </div>
             </div>
 
+        </section>
+
+        <!-- Job Content-->
+        <section class="main-job-page">
+            <!--Side Filters-->
+            <aside>
+                <!--Keywords-->
+                <div class="alert-section">
+                    <h6>Create Job Alert</h6>
+                    <p>You won't miss new daily job postings when you create and add your job keyword</p>
+                    <input type="search" placeholder="Enter job keyword" autocomplete />
+                    <button class="button" type="submit">Create Job Alerts</button>
+                </div>
+                <!--More filters-->
+            </aside>
+
+            <!--Main Job List-->
+            <main>
+                <div class="job-list-header">
+                    <div>
+                        <h6>Showing <span id="number-of-jobs">12</span> Jobs</h6>
+                    </div>
+                    <div>
+                        <p>Sort By Newest Jobs</p>
+                    </div>
+                </div>
+
+            </main>
         </section>
 
     </section>
