@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 15px !important;
 }
 
 body {
     font-family: 'Poppins', san-serif !important;
-    background-color: #d5d7de !important;
+    background-color: #e7e8ec !important;
 }
 
 .body-section {
@@ -346,4 +347,57 @@ main {
 
 .job-buttons button {
     width: 100%;
+}
+
+/* Smaller Screens*/
+@media only screen and (max-width: 900px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .search-section {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .search-section div {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        display: column;
+    }
+
+    .job-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .job-card {
+        margin: 0.3rem;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
 }

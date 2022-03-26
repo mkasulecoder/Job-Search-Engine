@@ -6,5 +6,3 @@
 - HTML — To master the understanding of how to work with the layout.
 - CSS — The platform requires a fair bit of styling the buttons, cards, etc.
 - JavaScript — We shall use filters when it comes to searching for jobs.
-
-### Check Out the site: https://jobsearchengine.netlify.app/

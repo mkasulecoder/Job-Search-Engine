@@ -1,0 +1,61 @@
+[{
+        "position": "Software Engineer",
+        "description": "If you are an engineer who's passionate about building impactful products that scale to tens of millions of page views a day, Indeed is looking for you. Indeed offers skilled developers like you a complex development ecosystem with short release cycles. Every week sees the new release of multiple products that meet the needs of jobseekers worldwide.",
+        "type": "Full time",
+        "salary": "100k-120k"
+    },
+    {
+        "position": "UX/UI Designer",
+        "description": "What makes Discovery Education a GREAT fit for you? We are the global leader in standards-aligned digital curriculum resources, engaging content, and professional learning for K-12 classrooms, and we partner with districts, states, and like-minded organizations to provide teachers with customized solutions that support the success of all learners. ",
+        "type": "Part time",
+        "salary": "70k-90k"
+    },
+    {
+        "position": "Junior Business Analyst",
+        "description": "We are looking for a Junior Business Analyst who will be the vital link between our information technology capacity and our business objectives by supporting and ensuring the successful completion of analytical, building, testing and deployment tasks of our software product’s features.",
+        "type": "Contract",
+        "salary": "50k-70k"
+    },
+    {
+        "position": "Junior Web Developer",
+        "description": "Are you a tech-savvy person who cares about the future of the planet, believes that elections should be decided by voters rather than big money, and thinks we should protect public health over corporate profits? Do you believe that organizing and advocacy have the potential to solve the problems that you are most concerned about?",
+        "type": "Internship",
+        "salary": "50k-70k"
+    },
+    {
+        "position": "Software Developer",
+        "description": "If you are an engineer who's passionate about building impactful products that scale to tens of millions of page views a day, Indeed is looking for you. Indeed offers skilled developers like you a complex development ecosystem with short release cycles. Every week sees the new release of multiple products that meet the needs of jobseekers worldwide.",
+        "type": "Full time",
+        "salary": "90k-100k"
+    },
+    {
+        "position": "High School Teacher",
+        "description": "What makes Discovery Education a GREAT fit for you? We are the global leader in standards-aligned digital curriculum resources, engaging content, and professional learning for K-12 classrooms, and we partner with districts, states, and like-minded organizations to provide teachers with customized solutions that support the success of all learners. ",
+        "type": "Full time",
+        "salary": "80k-100k"
+    },
+    {
+        "position": "Content Creator",
+        "description": "We are looking for a Junior Business Analyst who will be the vital link between our information technology capacity and our business objectives by supporting and ensuring the successful completion of analytical, building, testing and deployment tasks of our software product’s features.",
+        "type": "Contract",
+        "salary": "60k-70k"
+    },
+    {
+        "position": "Laboratory Technician",
+        "description": "Are you a tech-savvy person who cares about the future of the planet, believes that elections should be decided by voters rather than big money, and thinks we should protect public health over corporate profits? Do you believe that organizing and advocacy have the potential to solve the problems that you are most concerned about?",
+        "type": "Internship",
+        "salary": "50k-70k"
+    },
+    {
+        "position": "Sales Analyst",
+        "description": "We are looking for a Junior Business Analyst who will be the vital link between our information technology capacity and our business objectives by supporting and ensuring the successful completion of analytical, building, testing and deployment tasks of our software product’s features.",
+        "type": "Contract",
+        "salary": "70k-80k"
+    },
+    {
+        "position": "Python Developer",
+        "description": "Are you a tech-savvy person who cares about the future of the planet, believes that elections should be decided by voters rather than big money, and thinks we should protect public health over corporate profits? Do you believe that organizing and advocacy have the potential to solve the problems that you are most concerned about?",
+        "type": "Internship",
+        "salary": "120k-130k"
+    }
+]
