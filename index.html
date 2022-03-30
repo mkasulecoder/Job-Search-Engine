@@ -218,7 +218,7 @@
             <main>
                 <div class="job-list-header">
                     <div>
-                        <h6>Showing <span id="number-of-jobs">12</span> Jobs</h6>
+                        <h6>Showing <span id="number-of-jobs"></span> Jobs</h6>
                     </div>
                     <div>
                         <p>Sort By Newest Jobs</p>
@@ -226,9 +226,9 @@
                 </div>
 
                 <!--Grid Content Jobs-->
-                <div class="job-section">
+                <div class="job-section" id="job-section">
                     <!--Job 1-->
-                    <div class="job-card">
+                    <!-- <div class="job-card" id="job-card">
                         <div id="job-image">
                             <img src="./images/airbnb.png" alt="company image">
                         </div>
@@ -248,10 +248,10 @@
                             <div>
                                 Senior Level
                             </div>
-                        </div>
+                        </div> -->
 
-                        <!--Buttons-->
-                        <div class="job-buttons">
+                    <!--Buttons-->
+                    <!-- <div class="job-buttons">
                             <button class="button" id="apply-now">Apply Now</button>
                             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px"
                                 fill="#297ae6">
@@ -260,112 +260,7 @@
                                     d="M19.66 3.99c-2.64-1.8-5.9-.96-7.66 1.1-1.76-2.06-5.02-2.91-7.66-1.1-1.4.96-2.28 2.58-2.34 4.29-.14 3.88 3.3 6.99 8.55 11.76l.1.09c.76.69 1.93.69 2.69-.01l.11-.1c5.25-4.76 8.68-7.87 8.55-11.75-.06-1.7-.94-3.32-2.34-4.28zM12.1 18.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
                             </svg>
                         </div>
-                    </div>
-
-                    <!--Job 2-->
-                    <div class="job-card">
-                        <div id="job-image">
-                            <img src="./images/google.png" alt="company image">
-                        </div>
-                        <div class="job-detail">
-                            <h6>Mobile App Developer</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere, reprehenderit fuga
-                                libero soluta harum aut ipsum cupiditate saepe voluptatum eum dolore corrupti pariatur
-                                numquam culpa modi amet alias iste.</p>
-                        </div>
-                        <div class="job-categories">
-                            <div>
-                                Internship
-                            </div>
-                            <div>
-                                Est. 60k-75k
-                            </div>
-                            <div>
-                                Entry Level
-                            </div>
-                        </div>
-
-                        <!--Buttons-->
-                        <div class="job-buttons">
-                            <button class="button" id="apply-now">Apply Now</button>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px"
-                                fill="rgb(33, 115, 247)">
-                                <path d="M0 0h24v24H0V0z" fill="none" />
-                                <path
-                                    d="M13.35 20.13c-.76.69-1.93.69-2.69-.01l-.11-.1C5.3 15.27 1.87 12.16 2 8.28c.06-1.7.93-3.33 2.34-4.29 2.64-1.8 5.9-.96 7.66 1.1 1.76-2.06 5.02-2.91 7.66-1.1 1.41.96 2.28 2.59 2.34 4.29.14 3.88-3.3 6.99-8.55 11.76l-.1.09z" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!--Job 3-->
-                    <div class="job-card">
-                        <div id="job-image">
-                            <img src="./images/discord.png" alt="company logo">
-                        </div>
-                        <div class="job-detail">
-                            <h6>Sr. Product Designer</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere, reprehenderit fuga
-                                libero soluta harum aut ipsum cupiditate saepe voluptatum eum dolore corrupti pariatur
-                                numquam culpa modi amet alias iste.</p>
-                        </div>
-                        <div class="job-categories">
-                            <div>
-                                Full Time
-                            </div>
-                            <div>
-                                Est. 100k-120k
-                            </div>
-                            <div>
-                                Senior Level
-                            </div>
-                        </div>
-
-                        <!--Buttons-->
-                        <div class="job-buttons">
-                            <button class="button" id="apply-now">Apply Now</button>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px"
-                                fill="#297ae6">
-                                <path d="M0 0h24v24H0V0z" fill="none" />
-                                <path
-                                    d="M19.66 3.99c-2.64-1.8-5.9-.96-7.66 1.1-1.76-2.06-5.02-2.91-7.66-1.1-1.4.96-2.28 2.58-2.34 4.29-.14 3.88 3.3 6.99 8.55 11.76l.1.09c.76.69 1.93.69 2.69-.01l.11-.1c5.25-4.76 8.68-7.87 8.55-11.75-.06-1.7-.94-3.32-2.34-4.28zM12.1 18.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!--Job 4-->
-                    <div class="job-card">
-                        <div id="job-image">
-                            <img src="./images/slack.png" alt="">
-                        </div>
-                        <div class="job-detail">
-                            <h6>UI/UI Designer</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere, reprehenderit fuga
-                                libero soluta harum aut ipsum cupiditate saepe voluptatum eum dolore corrupti pariatur
-                                numquam culpa modi amet alias iste.</p>
-                        </div>
-                        <div class="job-categories">
-                            <div>
-                                Part Time
-                            </div>
-                            <div>
-                                Est. 30k-50k
-                            </div>
-                            <div>
-                                Entry Level
-                            </div>
-                        </div>
-
-                        <!--Buttons-->
-                        <div class="job-buttons">
-                            <button class="button" id="apply-now">Apply Now</button>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px"
-                                fill="#297ae6">
-                                <path d="M0 0h24v24H0V0z" fill="none" />
-                                <path
-                                    d="M19.66 3.99c-2.64-1.8-5.9-.96-7.66 1.1-1.76-2.06-5.02-2.91-7.66-1.1-1.4.96-2.28 2.58-2.34 4.29-.14 3.88 3.3 6.99 8.55 11.76l.1.09c.76.69 1.93.69 2.69-.01l.11-.1c5.25-4.76 8.68-7.87 8.55-11.75-.06-1.7-.94-3.32-2.34-4.28zM12.1 18.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
-                            </svg>
-                        </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -375,7 +270,7 @@
     </section>
 
 
-    <script src="./source/app.js"></script>
+    <script type="text/javascript" src="./source/app.js"></script>
     <!--bootstrap scripts-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
