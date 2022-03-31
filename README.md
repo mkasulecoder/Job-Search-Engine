@@ -6,4 +6,3 @@
 - HTML — To master the understanding of how to work with the layout.
 - CSS — The platform requires a fair bit of styling the buttons, cards, etc.
 - JavaScript — We shall use filters when it comes to searching for jobs.
-- JSON - To store jobs data and feed it to the HTML DOM
