@@ -1,6 +1,7 @@
 # Job Search Engine
 ### Result
-<img width="705" alt="Screen Shot 2022-03-08 at 2 04 44 AM" src="https://user-images.githubusercontent.com/31680529/157184597-68220d43-75e3-4b5a-96ef-b83c485dd544.png">
+![Screen Shot 2022-04-09 at 7 05 44 AM](https://user-images.githubusercontent.com/31680529/162569192-d97f4c45-836a-4e70-9de7-0dde3c1c4e14.png)
+
 
 ### Languages Used:
 - HTML — To master the understanding of how to work with the layout.
