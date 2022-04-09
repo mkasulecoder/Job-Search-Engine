@@ -1,7 +1,7 @@
 # Job Search Engine
 <hr>
 ### Result
-(https://user-images.githubusercontent.com/31680529/162569192-d97f4c45-836a-4e70-9de7-0dde3c1c4e14.png)
+<img src="https://user-images.githubusercontent.com/31680529/162569192-d97f4c45-836a-4e70-9de7-0dde3c1c4e14.png"/>
 
 <hr>
 ### Languages Used:
