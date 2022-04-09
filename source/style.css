@@ -35,13 +35,12 @@ header {
     font-weight: 500;
     /* background-color: #297ae6; */
     background: rgb(22, 147, 233);
-    background: linear-gradient(90deg, rgba(22, 147, 233, 1) 0%, rgba(22, 135, 230, 1) 50%, rgba(0, 176, 255, 1) 100%);
+    background: linear-gradient(90deg, rgb(22, 135, 233) 0%, rgba(22, 135, 230, 1) 50%, rgba(0, 176, 255, 1) 100%);
     color: #fff;
     padding: 0.5rem;
     border-radius: 3px;
     text-align: center;
     margin-top: 0.5rem;
-
 }
 
 header h6 {
@@ -108,7 +107,7 @@ header div {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    color: #297ae6;
+    color: #060935;
     background-color: rgb(243, 243, 243) !important;
     /* overflow-x: visible; */
 }
@@ -120,8 +119,8 @@ header div {
     flex-direction: row;
     border-radius: 5px;
     border: 1px solid #297ae6;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between;
     background-color: #fff;
 }
 
@@ -255,6 +254,11 @@ aside div {
     align-items: center;
 }
 
+#filter-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .emp_type span {
     background-color: #e0e0e0ed;
     width: 23px;
@@ -267,21 +271,13 @@ aside div {
     font-weight: bold;
 }
 
-/* Display on checkbox click*/
-/* .emp_type span {
-    background-color: #468ff0;
-    color: #fff;
-    font-weight: normal;
-    display: none;
-} */
-
-
 /* =========================== Job Main Section======================================*/
 main {
     flex: 4;
     display: flex;
     flex-direction: column;
     font-size: 13px;
+    padding: 0.5rem;
 }
 
 .job-list-header {
@@ -310,6 +306,23 @@ main {
     border-radius: 5px;
     padding: 1em
 }
+
+.job-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left !important;
+}
+
+.job-detail p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
 
 #job-image img {
     width: 30px;

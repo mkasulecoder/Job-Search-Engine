@@ -67,23 +67,77 @@ function numOfJobs(count) {
 //Get check filters
 let fulltime = document.getElementById("full-time");
 let inputValue = null;
-let spanText = document.getElementById("fliter-2");
+let spanText = document.getElementById("filter-2");
 
+// SORT FULL TIME JOBS
 fulltime.addEventListener("click", function (e) {
   if (fulltime.checked) {
     inputValue = e.target.value;
+    categoryTextOn();
     //list matching jobs
     sortData("Full time");
+    // console.log(inputValue);
+  } else {
+    inputValue = null;
+    // list all jobs
+    sortData(inputValue);
+    // console.log(inputValue);
+    categoryTextOff() ? true : false;
+  }
+});
+
+// SORT PART TIME JOBS
+let partTime = document.getElementById("part-time");
+// SORT PART TIME JOBS
+partTime.addEventListener("click", function (e) {
+  if (partTime.checked) {
+    inputValue = e.target.value;
+    //list matching jobs
+    sortData("Part time");
     console.log(inputValue);
   } else {
     inputValue = null;
     // list all jobs
     sortData(inputValue);
-    console.log(inputValue);
+    // console.log("Un checked box");
   }
 });
 
-// Filter JObs Function
+// SORT contract TIME JOBS
+let contract = document.getElementById("contract");
+// SORT contract TIME JOBS
+contract.addEventListener("click", function (e) {
+  if (contract.checked) {
+    inputValue = e.target.value;
+    //list matching jobs
+    sortData("Contract");
+    console.log(inputValue);
+  } else {
+    inputValue = null;
+    // list all jobs
+    sortData(inputValue);
+    // console.log("Un checked box");
+  }
+});
+
+// SORT internship TIME JOBS
+let internship = document.getElementById("intern");
+// SORT contract TIME JOBS
+internship.addEventListener("click", function (e) {
+  if (internship.checked) {
+    inputValue = e.target.value;
+    //list matching jobs
+    sortData("Internship");
+    console.log(inputValue);
+  } else {
+    inputValue = null;
+    // list all jobs
+    sortData(inputValue);
+    // console.log("Un checked box");
+  }
+});
+
+// Filter Jobs Function
 
 function sortData(job_type) {
   fetch(url, {
@@ -100,9 +154,9 @@ function sortData(job_type) {
       //count job that match
 
       dataList.map((filteredData) => {
-        if (filteredData.type === job_type) {
+        if (filteredData.type == job_type) {
           let numSortedJobs = 0;
-          // console.log(filteredData.position);
+          console.log(filteredData.position);
           sortedPost += `<div class="job-card">
                         <div id="job-image">
                             <img src="${filteredData.image}" alt="company logo">
@@ -140,11 +194,14 @@ function sortData(job_type) {
           // Count number of jobs
           numSortedJobs += 1;
 
+          // update span text
+          // spanText.innerText = 4;
+
+          //update showing results text
+          numSortedJobs = spanText.innerText;
+
           // update counted jobs
           numOfJobs(numSortedJobs);
-
-          // update span text
-          spanText.innerText = numSortedJobs;
         } else {
           // console.log(filteredData);
           allPosts += `<div class="job-card">
@@ -188,9 +245,51 @@ function sortData(job_type) {
           numOfJobs(num);
 
           // update span text
-          spanText.innerText = num;
+          // spanText.innerText = num;
         }
       });
     })
     .catch((err) => console.log("Error processing data"));
 }
+
+// Change category text
+categoryTypeText = document.getElementById("category-type");
+categoryTypeSpan = document.getElementById("category-type-span");
+
+function categoryTextOn() {
+  categoryTypeText.innerHTML = `Full time
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6" id="category-type-span">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                    </svg>`;
+}
+
+function categoryTextOff() {
+  categoryTypeText.innerHTML = `Job types
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6" id="category-type-span">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                    </svg>`;
+}
+
+function categoryTextChanged() {
+  if (categoryTextOn) {
+    categoryTypeSpan.addEventListener("click", categoryTextOff);
+  }
+}
+categoryTypeSpan.addEventListener("click", categoryTextChanged);
+
+//changing location
+categoryLocation = document.getElementById("category-location");
+categoryTypeSpan = document.getElementById("category-location-span");
+locationInput = document.getElementById("location-input");
+let searchLocation = "";
+
+locationInput.addEventListener("input", function (e) {
+  categoryLocation.textContent = e.target.value;
+  //send this data to update when filter is checked
+});
